@@ -1,0 +1,285 @@
+erDiagram
+    users {
+        uuid id PK
+        varchar username UK
+        varchar email UK
+        varchar name
+        varchar student_id UK
+        varchar phone
+        text avatar_url
+        user_role role
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    season_staff {
+        uuid id PK
+        uuid season_id FK
+        uuid user_id FK
+        staff_type staff_type
+        timestamptz created_at
+    }
+    seasons {
+        uuid id PK
+        int year UK
+        varchar slug UK
+        varchar name
+        varchar slogan
+        text logo_url
+        text banner_url
+        season_status status
+        boolean is_current
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    season_settings {
+        uuid id PK
+        uuid season_id FK
+        varchar setting_key
+        text setting_value
+        setting_value_type value_type
+        text description
+        timestamptz updated_at
+    }
+    season_pages {
+        uuid id PK
+        uuid season_id FK
+        varchar slug
+        varchar title
+        boolean is_published
+        int sort_order
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    block_samples {
+        uuid id PK
+        varchar code UK
+        varchar name
+        text description
+        jsonb default_data
+        timestamptz created_at
+    }
+    page_blocks {
+        uuid id PK
+        uuid page_id FK
+        uuid block_sample_id FK
+        int sort_order
+        boolean is_visible
+        jsonb data
+        timestamptz updated_at
+    }
+    sponsor_tiers {
+        uuid id PK
+        uuid season_id FK
+        varchar name
+        int sort_order
+    }
+    season_sponsors {
+        uuid id PK
+        uuid tier_id FK
+        varchar name
+        text logo_url
+        text website_url
+        int sort_order
+    }
+    season_milestones {
+        uuid id PK
+        uuid season_id FK
+        varchar title
+        text description
+        timestamptz start_at
+        timestamptz end_at
+        int sort_order
+    }
+    season_documents {
+        uuid id PK
+        uuid season_id FK
+        varchar title
+        varchar doc_type
+        varchar version
+        jsonb content
+        text file_url
+        timestamptz created_at
+    }
+    season_faqs {
+        uuid id PK
+        uuid season_id FK
+        varchar category
+        text question
+        text answer
+        timestamptz created_at
+    }
+    article_categories {
+        uuid id PK
+        varchar name
+        varchar slug UK
+    }
+    articles {
+        uuid id PK
+        uuid season_id FK
+        uuid category_id FK
+        uuid author_id FK
+        varchar title
+        varchar slug
+        text summary
+        text content
+        text thumbnail_url
+        article_status status
+        timestamptz published_at
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    teams {
+        uuid id PK
+        uuid season_id FK
+        varchar name
+        varchar invite_code UK
+        team_status status
+        text review_note
+        uuid reviewed_by FK
+        timestamptz reviewed_at
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    team_members {
+        uuid id PK
+        uuid team_id FK
+        uuid user_id FK
+        team_member_role role
+        member_invite_status invite_status
+        timestamptz joined_at
+        timestamptz created_at
+    }
+    rounds {
+        uuid id PK
+        uuid season_id FK
+        varchar name
+        round_type round_type
+        int sort_order
+        timestamptz created_at
+    }
+    matches {
+        uuid id PK
+        uuid round_id FK
+        varchar match_code UK
+        timestamptz scheduled_at
+        varchar venue_room
+        match_type match_type
+        pairing_method pairing_method
+        uuid created_by FK
+        match_status status
+        boolean is_published
+        timestamptz created_at
+        timestamptz updated_at
+    }
+    match_teams {
+        uuid id PK
+        uuid match_id FK
+        uuid team_id FK
+        int slot_order
+        varchar team_color
+    }
+    match_staff {
+        uuid id PK
+        uuid match_id FK
+        uuid season_staff_id FK
+        timestamptz assigned_at
+    }
+    live_coverages {
+        uuid id PK
+        uuid match_id FK,UK
+        varchar title
+        live_status status
+        text livestream_embed_url
+        text archive_video_url
+        timestamptz created_at
+    }
+    live_coverage_entries {
+        uuid id PK
+        uuid live_coverage_id FK
+        timestamptz occurred_at
+        text content_text
+        text image_url
+        boolean is_pinned
+        uuid created_by FK
+    }
+    match_stages {
+        uuid id PK
+        uuid match_id FK
+        int stage_number
+        varchar name
+        question_type question_type
+        jsonb config_json
+        stage_status status
+    }
+    match_stage_scores {
+        uuid id PK
+        uuid match_id FK
+        uuid match_stage_id FK
+        uuid match_team_id FK
+        numeric base_score
+        timestamptz created_at
+    }
+    score_adjustments {
+        uuid id PK
+        uuid match_stage_score_id FK
+        numeric delta_score
+        text reason
+        uuid adjusted_by_match_staff_id FK
+        timestamptz adjusted_at
+    }
+    question_sets {
+        uuid id PK
+        varchar title
+        text description
+        uuid created_by FK
+        timestamptz created_at
+    }
+    questions {
+        uuid id PK
+        question_type question_type
+        varchar title
+        text content
+        uuid created_by FK
+        timestamptz created_at
+    }
+    question_set_items {
+        uuid question_set_id PK,FK
+        uuid question_id PK,FK
+        int sort_order
+    }
+    mcq_questions {
+        uuid question_id PK,FK
+        question_type question_type
+        text option_a
+        text option_b
+        text option_c
+        text option_d
+        mcq_option correct_option
+    }
+    essay_questions {
+        uuid question_id PK,FK
+        question_type question_type
+        text sample_answer
+    }
+    coding_questions {
+        uuid question_id PK,FK
+        question_type question_type
+        text starter_code
+        int time_limit_ms
+        int memory_limit_mb
+    }
+    coding_test_cases {
+        uuid id PK
+        uuid question_id FK
+        text input_data
+        text expected_output
+        boolean is_sample
+        int score_weight
+    }
+    match_stage_questions {
+        uuid id PK
+        uuid match_stage_id FK
+        question_type question_type
+        uuid question_id FK
+        int sort_order
+    }

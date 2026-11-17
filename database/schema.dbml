@@ -1,0 +1,534 @@
+// Hệ thống Quản lý Cuộc thi Thách Thức - Schema DBML (Chuẩn 3NF - Phase 1: Web, Giải đấu chính thức & Thư viện Đề)
+// Cụm 5 (Web thi thử / Practice) sẽ mở rộng sau khi phần lõi này ổn định.
+
+// ==========================================
+// ENUMS
+// ==========================================
+
+Enum user_role {
+  USER
+  ADMIN
+}
+
+Enum staff_type {
+  MC
+  JUDGE
+  ORGANIZER
+}
+
+Enum season_status {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+Enum setting_value_type {
+  STRING
+  NUMBER
+  BOOLEAN
+  JSON
+}
+
+Enum article_status {
+  DRAFT
+  PUBLISHED
+}
+
+Enum team_status {
+  DRAFT
+  PENDING
+  NEEDS_REVISION
+  APPROVED
+  REJECTED
+  WITHDRAWN
+}
+
+Enum team_member_role {
+  CAPTAIN
+  MEMBER
+}
+
+Enum member_invite_status {
+  INVITED
+  ACCEPTED
+  DECLINED
+}
+
+Enum round_type {
+  PRELIMINARY
+  QUALIFIER
+  SEMIFINAL
+  FINAL
+  PLAYOFF
+}
+
+Enum match_type {
+  OFFICIAL
+  PLAYOFF
+}
+
+Enum pairing_method {
+  MANUAL
+  DRAW
+}
+
+Enum match_status {
+  DRAFT
+  IN_PROGRESS
+  PROVISIONAL
+  FINALIZED
+}
+
+Enum live_status {
+  LIVE
+  ENDED
+}
+
+Enum stage_status {
+  PENDING
+  RUNNING
+  PAUSED
+  FINISHED
+}
+
+Enum question_type {
+  MCQ
+  ESSAY
+  CODING // Dự kiến loại 3 - chờ xác nhận lại danh sách 3/4 loại câu hỏi
+}
+
+Enum mcq_option {
+  A
+  B
+  C
+  D
+}
+
+// ==========================================
+// CỤM 1: USERS & SEASON STAFF
+// ==========================================
+
+Table users {
+  id uuid [pk]
+  username varchar(50) [unique, not null]
+  email varchar(255) [unique, not null]
+  name varchar(150) [not null]
+  student_id varchar(30) [unique, note: 'MSSV, có thể null với tài khoản BTC/Giám khảo ngoài']
+  phone varchar(20)
+  avatar_url text
+  role user_role [not null, default: 'USER']
+  created_at timestamptz [not null]
+  updated_at timestamptz [not null]
+
+  Note: 'Logic đăng nhập (password_hash, OAuth...) tách ở bảng auth riêng.'
+}
+
+Table season_staff {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  user_id uuid [not null, ref: > users.id]
+  staff_type staff_type [not null, note: 'MC, JUDGE, ORGANIZER']
+  created_at timestamptz [not null]
+
+  indexes {
+    (season_id, user_id, staff_type) [unique]
+    (id, season_id) [unique, note: 'Hỗ trợ Composite FK khóa cùng mùa từ match_staff']
+  }
+
+  Note: 'Danh sách cộng tác viên (MC, Giám khảo...) đăng ký theo từng mùa.'
+}
+
+// ==========================================
+// CỤM 2: SEASONS, WEB PORTAL & NEWS
+// ==========================================
+
+Table seasons {
+  id uuid [pk]
+  year int [unique, not null]
+  slug varchar(50) [unique, not null]
+  name varchar(150) [not null]
+  slogan varchar(255)
+  logo_url text
+  banner_url text
+  status season_status [not null, default: 'DRAFT']
+  is_current boolean [not null, default: false]
+  created_at timestamptz [not null]
+  updated_at timestamptz [not null]
+}
+
+Table season_settings {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  setting_key varchar(100) [not null]
+  setting_value text [not null]
+  value_type setting_value_type [not null, default: 'STRING']
+  description text
+  updated_at timestamptz [not null]
+
+  indexes {
+    (season_id, setting_key) [unique]
+  }
+
+  Note: 'Cấu hình key-value linh hoạt cho từng mùa (số thành viên tối đa, thời gian mở đăng ký...).'
+}
+
+Table season_pages {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  slug varchar(100) [not null]
+  title varchar(200) [not null]
+  is_published boolean [not null, default: false]
+  sort_order int [not null, default: 0]
+  created_at timestamptz [not null]
+  updated_at timestamptz [not null]
+
+  indexes {
+    (season_id, slug) [unique]
+  }
+}
+
+Table block_samples {
+  id uuid [pk]
+  code varchar(80) [unique, not null, note: 'Khớp key trong BLOCK_REGISTRY của Frontend']
+  name varchar(150) [not null]
+  description text
+  default_data jsonb [not null]
+  created_at timestamptz [not null]
+}
+
+Table page_blocks {
+  id uuid [pk]
+  page_id uuid [not null, ref: > season_pages.id]
+  block_sample_id uuid [not null, ref: > block_samples.id]
+  sort_order int [not null, default: 0]
+  is_visible boolean [not null, default: true]
+  data jsonb [not null, note: 'Copy từ block_samples.default_data và cho phép chỉnh sửa theo trang']
+  updated_at timestamptz [not null]
+}
+
+Table sponsor_tiers {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  name varchar(100) [not null, note: 'Kim cương, Vàng, Bạc, Đồng... (tự định nghĩa theo mùa)']
+  sort_order int [not null, default: 0]
+
+  indexes {
+    (season_id, name) [unique]
+  }
+}
+
+Table season_sponsors {
+  id uuid [pk]
+  tier_id uuid [not null, ref: > sponsor_tiers.id, note: 'Không lặp season_id vì suy ra từ tier_id (3NF)']
+  name varchar(200) [not null]
+  logo_url text
+  website_url text
+  sort_order int [not null, default: 0]
+}
+
+Table season_milestones {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  title varchar(200) [not null]
+  description text
+  start_at timestamptz [not null]
+  end_at timestamptz
+  sort_order int [not null, default: 0]
+}
+
+Table season_documents {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  title varchar(200) [not null]
+  doc_type varchar(50) [not null]
+  version varchar(30)
+  content jsonb [note: 'Nội dung thể lệ dạng JSON có cấu trúc (hoặc đính kèm PDF)']
+  file_url text
+  created_at timestamptz [not null]
+}
+
+Table season_faqs {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  category varchar(100)
+  question text [not null]
+  answer text [not null]
+  created_at timestamptz [not null]
+}
+
+Table article_categories {
+  id uuid [pk]
+  name varchar(100) [not null]
+  slug varchar(100) [unique, not null]
+}
+
+Table articles {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  category_id uuid [not null, ref: > article_categories.id]
+  author_id uuid [ref: > users.id]
+  title varchar(255) [not null]
+  slug varchar(255) [not null]
+  summary text
+  content text [not null]
+  thumbnail_url text
+  status article_status [not null, default: 'DRAFT']
+  published_at timestamptz
+  created_at timestamptz [not null]
+  updated_at timestamptz [not null]
+
+  indexes {
+    (season_id, slug) [unique]
+  }
+}
+
+// ==========================================
+// CỤM 3: TEAMS, ROUNDS, MATCHES & SCORING
+// ==========================================
+
+Table teams {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  name varchar(150) [not null]
+  invite_code varchar(32) [unique, not null]
+  status team_status [not null, default: 'DRAFT']
+  review_note text
+  reviewed_by uuid [ref: > users.id]
+  reviewed_at timestamptz
+  created_at timestamptz [not null]
+  updated_at timestamptz [not null]
+
+  indexes {
+    (season_id, name) [unique]
+    (id, season_id) [unique, note: 'Hỗ trợ kiểm soát cùng mùa khi gán vào match']
+  }
+
+  Note: 'Chỉ status = APPROVED mới là đội thi chính thức được xếp vào trận đấu.'
+}
+
+Table team_members {
+  id uuid [pk]
+  team_id uuid [not null, ref: > teams.id]
+  user_id uuid [not null, ref: > users.id]
+  role team_member_role [not null, default: 'MEMBER']
+  invite_status member_invite_status [not null, default: 'INVITED']
+  joined_at timestamptz
+  created_at timestamptz [not null]
+
+  indexes {
+    (team_id, user_id) [unique]
+    // PostgreSQL partial unique index: UNIQUE (team_id) WHERE role = 'CAPTAIN' (tối đa 1 đội trưởng/đội)
+    // Ràng buộc nghiệp vụ: 1 user thuộc tối đa 1 team có status NOT IN ('WITHDRAWN', 'REJECTED') trong cùng 1 season_id (thực thi bằng DB Trigger).
+  }
+}
+
+Table rounds {
+  id uuid [pk]
+  season_id uuid [not null, ref: > seasons.id]
+  name varchar(150) [not null]
+  round_type round_type [not null]
+  sort_order int [not null, default: 0]
+  created_at timestamptz [not null]
+
+  indexes {
+    (id, season_id) [unique]
+  }
+}
+
+Table matches {
+  id uuid [pk]
+  round_id uuid [not null, ref: > rounds.id]
+  match_code varchar(50) [unique, not null]
+  scheduled_at timestamptz
+  venue_room varchar(150)
+  match_type match_type [not null, default: 'OFFICIAL']
+  pairing_method pairing_method [not null, default: 'MANUAL']
+  created_by uuid [ref: > users.id]
+  status match_status [not null, default: 'DRAFT']
+  is_published boolean [not null, default: false]
+  created_at timestamptz [not null]
+  updated_at timestamptz [not null]
+}
+
+Table match_teams {
+  id uuid [pk]
+  match_id uuid [not null, ref: > matches.id]
+  team_id uuid [not null, ref: > teams.id]
+  slot_order int [not null, note: 'Số đội dynamic trong trận (1..N)']
+  team_color varchar(30)
+
+  indexes {
+    (match_id, team_id) [unique]
+    (match_id, slot_order) [unique]
+    (id, match_id) [unique]
+  }
+}
+
+Table match_staff {
+  id uuid [pk]
+  match_id uuid [not null, ref: > matches.id]
+  season_staff_id uuid [not null, ref: > season_staff.id]
+  assigned_at timestamptz [not null]
+
+  indexes {
+    (match_id, season_staff_id) [unique]
+  }
+
+  Note: 'Nối MC và Giám khảo của mùa vào từng trận đấu cụ thể.'
+}
+
+Table live_coverages {
+  id uuid [pk]
+  match_id uuid [unique, not null, ref: > matches.id, note: 'Không lặp season_id vì suy ra qua match -> round -> season (3NF)']
+  title varchar(255) [not null]
+  status live_status [not null, default: 'LIVE']
+  livestream_embed_url text
+  archive_video_url text
+  created_at timestamptz [not null]
+}
+
+Table live_coverage_entries {
+  id uuid [pk]
+  live_coverage_id uuid [not null, ref: > live_coverages.id]
+  occurred_at timestamptz [not null]
+  content_text text [not null]
+  image_url text
+  is_pinned boolean [not null, default: false]
+  created_by uuid [ref: > users.id]
+}
+
+Table match_stages {
+  id uuid [pk]
+  match_id uuid [not null, ref: > matches.id]
+  stage_number int [not null, note: '0 = Vòng 0 (cộng 20 điểm đầu trận); 1..N = các vòng chơi']
+  name varchar(150) [not null]
+  question_type question_type [note: 'Nullable ở Vòng 0; quy định loại câu hỏi cho vòng chơi 1..N']
+  config_json jsonb [note: 'File JSON cấu hình linh hoạt cho từng game/vòng chơi']
+  status stage_status [not null, default: 'PENDING']
+
+  indexes {
+    (match_id, stage_number) [unique]
+    (id, match_id) [unique]
+    (id, question_type) [unique]
+  }
+}
+
+Table match_stage_scores {
+  id uuid [pk]
+  match_id uuid [not null]
+  match_stage_id uuid [not null]
+  match_team_id uuid [not null]
+  base_score numeric(10,2) [not null, default: 0, note: 'Điểm hệ thống/vòng 0; không lưu total_score tổng trận để tránh lệch dữ liệu']
+  created_at timestamptz [not null]
+
+  indexes {
+    (match_stage_id, match_team_id) [unique]
+  }
+
+  Note: 'Tổng điểm vòng = base_score + SUM(score_adjustments.delta_score). Tổng điểm trận = SUM tất cả các vòng.'
+}
+
+Ref: match_stage_scores.(match_stage_id, match_id) > match_stages.(id, match_id)
+Ref: match_stage_scores.(match_team_id, match_id) > match_teams.(id, match_id)
+
+Table score_adjustments {
+  id uuid [pk]
+  match_stage_score_id uuid [not null, ref: > match_stage_scores.id]
+  delta_score numeric(10,2) [not null]
+  reason text [not null]
+  adjusted_by_match_staff_id uuid [not null, ref: > match_staff.id]
+  adjusted_at timestamptz [not null]
+
+  Note: 'Lịch sử ban giám khảo can thiệp cộng/trừ/sửa điểm từng vòng kèm lý do.'
+}
+
+// ==========================================
+// CỤM 4: QUESTION LIBRARY & SETS
+// ==========================================
+
+Table question_sets {
+  id uuid [pk]
+  title varchar(200) [not null]
+  description text
+  created_by uuid [ref: > users.id]
+  created_at timestamptz [not null]
+}
+
+Table questions {
+  id uuid [pk]
+  question_type question_type [not null]
+  title varchar(255)
+  content text [not null, note: 'Câu hỏi / Đề bài chung']
+  created_by uuid [ref: > users.id]
+  created_at timestamptz [not null]
+
+  indexes {
+    (id, question_type) [unique]
+  }
+}
+
+Table question_set_items {
+  question_set_id uuid [not null, ref: > question_sets.id]
+  question_id uuid [not null, ref: > questions.id]
+  sort_order int [not null, default: 0]
+
+  indexes {
+    (question_set_id, question_id) [pk]
+  }
+}
+
+Table mcq_questions {
+  question_id uuid [pk]
+  question_type question_type [not null, default: 'MCQ', note: "CHECK (question_type = 'MCQ')"]
+  option_a text [not null]
+  option_b text [not null]
+  option_c text [not null]
+  option_d text [not null]
+  correct_option mcq_option [not null]
+}
+
+Ref: mcq_questions.(question_id, question_type) > questions.(id, question_type)
+
+Table essay_questions {
+  question_id uuid [pk]
+  question_type question_type [not null, default: 'ESSAY', note: "CHECK (question_type = 'ESSAY')"]
+  sample_answer text [note: 'Nullable với các câu tự luận không cần đáp án mẫu']
+}
+
+Ref: essay_questions.(question_id, question_type) > questions.(id, question_type)
+
+Table coding_questions {
+  question_id uuid [pk]
+  question_type question_type [not null, default: 'CODING', note: "CHECK (question_type = 'CODING')"]
+  starter_code text
+  time_limit_ms int [not null, default: 1000]
+  memory_limit_mb int [not null, default: 256]
+}
+
+Ref: coding_questions.(question_id, question_type) > questions.(id, question_type)
+
+Table coding_test_cases {
+  id uuid [pk]
+  question_id uuid [not null, ref: > coding_questions.question_id]
+  input_data text [not null]
+  expected_output text [not null]
+  is_sample boolean [not null, default: false]
+  score_weight int [not null, default: 10]
+}
+
+Table match_stage_questions {
+  id uuid [pk]
+  match_stage_id uuid [not null]
+  question_type question_type [not null]
+  question_id uuid [not null]
+  sort_order int [not null, default: 0]
+
+  indexes {
+    (match_stage_id, question_id) [unique]
+  }
+
+  Note: 'FK kép đảm bảo câu hỏi bốc từ thư viện luôn khớp đúng question_type của vòng chơi.'
+}
+
+Ref: match_stage_questions.(match_stage_id, question_type) > match_stages.(id, question_type)
+Ref: match_stage_questions.(question_id, question_type) > questions.(id, question_type)
