@@ -1,4 +1,3 @@
-<?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="wjmGhzkvqdclUuk0bd3r">
     <mxGraphModel dx="3237" dy="-17836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
@@ -41,20 +40,8 @@
         <mxCell id="FkVBnLay4ox0SEv2v0c9-17" parent="FkVBnLay4ox0SEv2v0c9-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="updated_at timestamptz NOT NULL" vertex="1">
           <mxGeometry height="26" width="270" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-19" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="season_staff " vertex="1">
-          <mxGeometry height="130" width="230" x="50" y="20280" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-21" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="season_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="230" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-22" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="user_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="230" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-23" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="staff_type staff_type NOT NULL," vertex="1">
-          <mxGeometry height="26" width="230" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-24" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
-          <mxGeometry height="26" width="230" y="104" as="geometry" />
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-19" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="season_staff" vertex="1">
+          <mxGeometry height="156" width="280" x="50" y="20280" as="geometry" />
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-26" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value=" seasons " vertex="1">
           <mxGeometry height="312" width="310" x="500" y="20200" as="geometry" />
@@ -365,13 +352,13 @@
         <mxCell id="FkVBnLay4ox0SEv2v0c9-136" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="teams " vertex="1">
           <mxGeometry height="286" width="300" x="-980" y="19870" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-137" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-137" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 id uuid PRIMARY KEY," vertex="1">
           <mxGeometry height="26" width="300" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-138" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="season_id uuid NOT NULL," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-138" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK2,FK1 season_id uuid NOT NULL," vertex="1">
           <mxGeometry height="26" width="300" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-139" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="name varchar(150) NOT NULL," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-139" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK2 name varchar(150) NOT NULL," vertex="1">
           <mxGeometry height="26" width="300" y="78" as="geometry" />
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-140" parent="FkVBnLay4ox0SEv2v0c9-136" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="invite_code varchar(32) UNIQUE NOT NULL," vertex="1">
@@ -401,10 +388,10 @@
         <mxCell id="FkVBnLay4ox0SEv2v0c9-149" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
           <mxGeometry height="26" width="390" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-150" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="team_id uuid NOT NULL," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-150" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK1 team_id uuid NOT NULL," vertex="1">
           <mxGeometry height="26" width="390" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-151" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="user_id uuid NOT NULL," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-151" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK2 user_id uuid NOT NULL," vertex="1">
           <mxGeometry height="26" width="390" y="78" as="geometry" />
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-152" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="role team_member_role NOT NULL DEFAULT 'MEMBER'," vertex="1">
@@ -419,13 +406,13 @@
         <mxCell id="FkVBnLay4ox0SEv2v0c9-155" parent="FkVBnLay4ox0SEv2v0c9-148" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
           <mxGeometry height="26" width="390" y="182" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-157" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE rounds (" vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-157" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="rounds" vertex="1">
           <mxGeometry height="182" width="230" x="-310" y="20340" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-158" parent="FkVBnLay4ox0SEv2v0c9-157" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-158" parent="FkVBnLay4ox0SEv2v0c9-157" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 id uuid PRIMARY KEY," vertex="1">
           <mxGeometry height="26" width="230" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-159" parent="FkVBnLay4ox0SEv2v0c9-157" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="season_id uuid NOT NULL," vertex="1">
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-159" parent="FkVBnLay4ox0SEv2v0c9-157" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK1 season_id uuid NOT NULL," vertex="1">
           <mxGeometry height="26" width="230" y="52" as="geometry" />
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-160" parent="FkVBnLay4ox0SEv2v0c9-157" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="name varchar(150) NOT NULL," vertex="1">
@@ -438,165 +425,6 @@
           <mxGeometry height="26" width="230" y="130" as="geometry" />
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-163" parent="FkVBnLay4ox0SEv2v0c9-157" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
-          <mxGeometry height="26" width="230" y="156" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-165" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="matches " vertex="1">
-          <mxGeometry height="338" width="380" x="-900" y="20290" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-166" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
-          <mxGeometry height="26" width="380" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-167" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="round_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="380" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-168" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="match_code varchar(50) UNIQUE NOT NULL," vertex="1">
-          <mxGeometry height="26" width="380" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-169" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="scheduled_at timestamptz," vertex="1">
-          <mxGeometry height="26" width="380" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-170" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="venue_room varchar(150)," vertex="1">
-          <mxGeometry height="26" width="380" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-171" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="match_type match_type NOT NULL DEFAULT 'OFFICIAL'," vertex="1">
-          <mxGeometry height="26" width="380" y="156" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-172" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="pairing_method pairing_method NOT NULL DEFAULT 'MANUAL'," vertex="1">
-          <mxGeometry height="26" width="380" y="182" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-173" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_by uuid," vertex="1">
-          <mxGeometry height="26" width="380" y="208" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-174" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status match_status NOT NULL DEFAULT 'DRAFT'," vertex="1">
-          <mxGeometry height="26" width="380" y="234" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-175" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_published boolean NOT NULL DEFAULT false," vertex="1">
-          <mxGeometry height="26" width="380" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-176" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL," vertex="1">
-          <mxGeometry height="26" width="380" y="286" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-177" parent="FkVBnLay4ox0SEv2v0c9-165" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="updated_at timestamptz NOT NULL" vertex="1">
-          <mxGeometry height="26" width="380" y="312" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-179" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_teams" vertex="1">
-          <mxGeometry height="130" width="320" x="-1300" y="20540" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-181" parent="FkVBnLay4ox0SEv2v0c9-179" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK match_id uuid NOT NULL" vertex="1">
-          <mxGeometry height="26" width="320" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-182" parent="FkVBnLay4ox0SEv2v0c9-179" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK team_id uuid NOT NULL" vertex="1">
-          <mxGeometry height="26" width="320" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-179_row_3" parent="FkVBnLay4ox0SEv2v0c9-179" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="initial_score numeric(10,2) NOT NULL DEFAULT 20" vertex="1"><mxGeometry height="26" width="320" y="78" as="geometry" /></mxCell><mxCell id="FkVBnLay4ox0SEv2v0c9-179_row_4" parent="FkVBnLay4ox0SEv2v0c9-179" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="slot_order int" vertex="1"><mxGeometry height="26" width="320" y="104" as="geometry" /></mxCell><mxCell id="FkVBnLay4ox0SEv2v0c9-186" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE match_staff (" vertex="1">
-          <mxGeometry height="156" width="220" x="2465" y="21370" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-187" parent="FkVBnLay4ox0SEv2v0c9-186" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
-          <mxGeometry height="26" width="220" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-188" parent="FkVBnLay4ox0SEv2v0c9-186" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="match_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="220" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-189" parent="FkVBnLay4ox0SEv2v0c9-186" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="season_staff_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="220" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-190" parent="FkVBnLay4ox0SEv2v0c9-186" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="assigned_at timestamptz NOT NULL" vertex="1">
-          <mxGeometry height="26" width="220" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-191" parent="FkVBnLay4ox0SEv2v0c9-186" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value=");" vertex="1">
-          <mxGeometry height="26" width="220" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-192" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE live_coverages (" vertex="1">
-          <mxGeometry height="234" width="280" x="2725" y="21370" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-193" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
-          <mxGeometry height="26" width="280" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-194" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="match_id uuid UNIQUE NOT NULL," vertex="1">
-          <mxGeometry height="26" width="280" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-195" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="title varchar(255) NOT NULL," vertex="1">
-          <mxGeometry height="26" width="280" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-196" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status live_status NOT NULL DEFAULT 'LIVE'," vertex="1">
-          <mxGeometry height="26" width="280" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-197" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="livestream_embed_url text," vertex="1">
-          <mxGeometry height="26" width="280" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-198" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="archive_video_url text," vertex="1">
-          <mxGeometry height="26" width="280" y="156" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-199" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
-          <mxGeometry height="26" width="280" y="182" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-200" parent="FkVBnLay4ox0SEv2v0c9-192" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value=");" vertex="1">
-          <mxGeometry height="26" width="280" y="208" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-201" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE live_coverage_entries (" vertex="1">
-          <mxGeometry height="234" width="280" x="3045" y="21370" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-202" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
-          <mxGeometry height="26" width="280" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-203" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="live_coverage_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="280" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-204" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="occurred_at timestamptz NOT NULL," vertex="1">
-          <mxGeometry height="26" width="280" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-205" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="content_text text NOT NULL," vertex="1">
-          <mxGeometry height="26" width="280" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-206" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="image_url text," vertex="1">
-          <mxGeometry height="26" width="280" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-207" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_pinned boolean NOT NULL DEFAULT false," vertex="1">
-          <mxGeometry height="26" width="280" y="156" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-208" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_by uuid" vertex="1">
-          <mxGeometry height="26" width="280" y="182" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-209" parent="FkVBnLay4ox0SEv2v0c9-201" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value=");" vertex="1">
-          <mxGeometry height="26" width="280" y="208" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-210" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_stages" vertex="1">
-          <mxGeometry height="156" width="320" x="-1300" y="20950" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-216" parent="FkVBnLay4ox0SEv2v0c9-210" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK match_id uuid NOT NULL" vertex="1">
-          <mxGeometry height="26" width="320" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-217" parent="FkVBnLay4ox0SEv2v0c9-210" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK stage_no int NOT NULL" vertex="1">
-          <mxGeometry height="26" width="320" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-19" parent="FkVBnLay4ox0SEv2v0c9-210" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK game_id uuid NOT NULL" vertex="1">
-          <mxGeometry height="26" width="320" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-20" parent="FkVBnLay4ox0SEv2v0c9-210" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="config_json jsonb" vertex="1">
-          <mxGeometry height="26" width="320" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-21" parent="FkVBnLay4ox0SEv2v0c9-210" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status stage_status NOT NULL DEFAULT 'PENDING'" vertex="1">
-          <mxGeometry height="26" width="320" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-235" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE question_sets (" vertex="1">
-          <mxGeometry height="182" width="230" x="4335" y="21370" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-236" parent="FkVBnLay4ox0SEv2v0c9-235" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
-          <mxGeometry height="26" width="230" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-237" parent="FkVBnLay4ox0SEv2v0c9-235" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="title varchar(200) NOT NULL," vertex="1">
-          <mxGeometry height="26" width="230" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-238" parent="FkVBnLay4ox0SEv2v0c9-235" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="description text," vertex="1">
-          <mxGeometry height="26" width="230" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-239" parent="FkVBnLay4ox0SEv2v0c9-235" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_by uuid," vertex="1">
-          <mxGeometry height="26" width="230" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-240" parent="FkVBnLay4ox0SEv2v0c9-235" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
-          <mxGeometry height="26" width="230" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-241" parent="FkVBnLay4ox0SEv2v0c9-235" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value=");" vertex="1">
           <mxGeometry height="26" width="230" y="156" as="geometry" />
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-242" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE questions (" vertex="1">
@@ -727,27 +555,6 @@
         </mxCell>
         <mxCell id="FkVBnLay4ox0SEv2v0c9-284" parent="FkVBnLay4ox0SEv2v0c9-277" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value=");" vertex="1">
           <mxGeometry height="26" width="280" y="182" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-285" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="CREATE TABLE match_stage_questions (" vertex="1">
-          <mxGeometry height="182" width="290" x="10270" y="19370" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-286" parent="FkVBnLay4ox0SEv2v0c9-285" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="id uuid PRIMARY KEY," vertex="1">
-          <mxGeometry height="26" width="290" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-287" parent="FkVBnLay4ox0SEv2v0c9-285" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="match_stage_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="290" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-288" parent="FkVBnLay4ox0SEv2v0c9-285" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="question_type question_type NOT NULL," vertex="1">
-          <mxGeometry height="26" width="290" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-289" parent="FkVBnLay4ox0SEv2v0c9-285" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="question_id uuid NOT NULL," vertex="1">
-          <mxGeometry height="26" width="290" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-290" parent="FkVBnLay4ox0SEv2v0c9-285" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="sort_order int NOT NULL DEFAULT 0" vertex="1">
-          <mxGeometry height="26" width="290" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="FkVBnLay4ox0SEv2v0c9-291" parent="FkVBnLay4ox0SEv2v0c9-285" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value=")" vertex="1">
-          <mxGeometry height="26" width="290" y="156" as="geometry" />
         </mxCell>
         <mxCell id="Wa8fE_v02CL8O7pAPaKz-1" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="FkVBnLay4ox0SEv2v0c9-21" style="endArrow=ERzeroToOne;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;startArrow=ERzeroToMany;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-14" value="">
           <mxGeometry height="50" relative="1" width="50" x="-0.0997" as="geometry">
@@ -908,80 +715,749 @@
             <mxPoint x="10" y="20560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Wa8fE_v02CL8O7pAPaKz-38" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="FkVBnLay4ox0SEv2v0c9-170" style="endArrow=ERmandOne;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;startArrow=ERoneToMany;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-157" value="">
-          <mxGeometry height="50" relative="1" width="50" x="-0.0002" as="geometry">
-            <Array as="points">
-              <mxPoint x="-420" y="20431" />
-              <mxPoint x="-350" y="20430" />
-            </Array>
-            <mxPoint x="-130" y="20580" as="sourcePoint" />
-            <mxPoint x="-80" y="20530" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Wa8fE_v02CL8O7pAPaKz-39" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="FkVBnLay4ox0SEv2v0c9-179" style="endArrow=ERmandOne;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;endFill=0;startArrow=ERoneToMany;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-175" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1000" y="20590" as="sourcePoint" />
-            <mxPoint x="-510" y="20640" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-23" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="FkVBnLay4ox0SEv2v0c9-210" style="endArrow=ERmandOne;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=ERoneToMany;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-176" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1200" y="20830" as="sourcePoint" />
-            <mxPoint x="-990" y="20760" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-26" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="stage_decisions" vertex="1">
-          <mxGeometry height="286" width="340" x="-1090" y="21250" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-27" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1,FK2 match_id uuid NOT NULL" vertex="1">
-          <mxGeometry height="26" width="340" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-28" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 stage_no int NOT NULL" vertex="1">
-          <mxGeometry height="26" width="340" y="52" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-29" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK2 team_id uuid NOT NULL" vertex="1">
-          <mxGeometry height="26" width="340" y="78" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-30" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK seq int NOT NULL" vertex="1">
-          <mxGeometry height="26" width="340" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-31" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="decision_source varchar(30) NOT NULL" vertex="1">
-          <mxGeometry height="26" width="340" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-32" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_accepted boolean NOT NULL DEFAULT true" vertex="1">
-          <mxGeometry height="26" width="340" y="156" as="geometry" />
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-26_row_7" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="delta_score numeric(10,2) NOT NULL" vertex="1"><mxGeometry height="26" width="340" y="182" as="geometry" /></mxCell><mxCell id="POqxOgopZDith95gDyh4-26_row_8" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="reason text" vertex="1"><mxGeometry height="26" width="340" y="208" as="geometry" /></mxCell><mxCell id="POqxOgopZDith95gDyh4-26_row_9" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="adjusted_by_match_staff_id uuid" vertex="1"><mxGeometry height="26" width="340" y="234" as="geometry" /></mxCell><mxCell id="POqxOgopZDith95gDyh4-26_row_10" parent="POqxOgopZDith95gDyh4-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="decided_at timestamptz NOT NULL" vertex="1"><mxGeometry height="26" width="340" y="260" as="geometry" /></mxCell><mxCell id="POqxOgopZDith95gDyh4-33" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="POqxOgopZDith95gDyh4-26" style="endArrow=ERmandOne;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=ERzeroToMany;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-210" value="FK1 (match_id, stage_no)">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-670" y="21160" as="sourcePoint" />
-            <mxPoint x="-620" y="21110" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-34" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="POqxOgopZDith95gDyh4-26" style="endArrow=ERmandOne;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=ERzeroToMany;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-179" value="FK2 (match_id, team_id)">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1190" y="20940" as="sourcePoint" />
-            <mxPoint x="-1140" y="20890" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Wa8fE_v02CL8O7pAPaKz-49" parent="1" style="text;whiteSpace=wrap;html=1;" value="&amp;nbsp;" vertex="1">
           <mxGeometry height="40" width="40" x="920" y="20830" as="geometry" />
         </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-10" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Game" vertex="1">
-          <mxGeometry height="120" width="140" x="-1550" y="20820" as="geometry" />
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-20" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK2 id uuid PRIMARY KEY," vertex="1">
+          <mxGeometry as="geometry" height="26" width="280" y="26" />
         </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-11" parent="POqxOgopZDith95gDyh4-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="id uuid NOT NULL" vertex="1">
-          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-21" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK2,FK1 season_id uuid NOT NULL," vertex="1">
+          <mxGeometry as="geometry" height="26" width="280" y="52" />
         </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-12" parent="POqxOgopZDith95gDyh4-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="name" vertex="1">
-          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-22" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK2 user_id uuid NOT NULL," vertex="1">
+          <mxGeometry as="geometry" height="26" width="280" y="78" />
         </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-13" parent="POqxOgopZDith95gDyh4-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="code varchar(50) UNIQUE" vertex="1">
-          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-23" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1 staff_type staff_type NOT NULL," vertex="1">
+          <mxGeometry as="geometry" height="26" width="280" y="104" />
         </mxCell>
-        <mxCell id="POqxOgopZDith95gDyh4-24" edge="1" parent="1" source="POqxOgopZDith95gDyh4-11" style="endArrow=ERzeroToMany;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endFill=0;startArrow=ERmandOne;startFill=0;" target="FkVBnLay4ox0SEv2v0c9-210" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-1220" y="20890" as="sourcePoint" />
-            <mxPoint x="-1170" y="20840" as="targetPoint" />
+        <mxCell id="FkVBnLay4ox0SEv2v0c9-24" parent="FkVBnLay4ox0SEv2v0c9-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="280" y="130" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_bots" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="practice_slot_bots" vertex="1">
+          <mxGeometry as="geometry" x="-2960" y="20480" width="560" height="156" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_bots__r1" parent="tbl_practice_slot_bots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="26" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_bots__r2" parent="tbl_practice_slot_bots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="52" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_bots__r3" parent="tbl_practice_slot_bots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 slot_kind slot_kind NOT NULL DEFAULT 'PRACTICE_BOT' CHECK ('PRACTICE_BOT')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="78" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_bots__r4" parent="tbl_practice_slot_bots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="bot_difficulty bot_difficulty NOT NULL DEFAULT 'MEDIUM'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="104" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_bots__r5" parent="tbl_practice_slot_bots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="bot_profile varchar(50)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="130" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_humans" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="practice_slot_humans" vertex="1">
+          <mxGeometry as="geometry" x="-2960" y="20700" width="590" height="130" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_humans__r1" parent="tbl_practice_slot_humans" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="26" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_humans__r2" parent="tbl_practice_slot_humans" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="52" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_humans__r3" parent="tbl_practice_slot_humans" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 slot_kind slot_kind NOT NULL DEFAULT 'PRACTICE_HUMAN' CHECK ('PRACTICE_HUMAN')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="78" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_humans__r4" parent="tbl_practice_slot_humans" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2 source_team_id uuid NULL  -- optional teams.id" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="104" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_members" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="practice_slot_members" vertex="1">
+          <mxGeometry as="geometry" x="-2960" y="20900" width="430" height="156" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_members__r1" parent="tbl_practice_slot_members" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="26" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_members__r2" parent="tbl_practice_slot_members" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="52" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_members__r3" parent="tbl_practice_slot_members" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,FK2 user_id uuid NOT NULL  -- UK1(match_id, user_id)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="78" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_members__r4" parent="tbl_practice_slot_members" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_slot_captain boolean NOT NULL DEFAULT false" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="104" />
+        </mxCell>
+        <mxCell id="tbl_practice_slot_members__r5" parent="tbl_practice_slot_members" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="joined_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="130" />
+        </mxCell>
+        <mxCell id="tbl_practice_rooms" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="practice_rooms" vertex="1">
+          <mxGeometry as="geometry" x="-2300" y="20220" width="520" height="130" />
+        </mxCell>
+        <mxCell id="tbl_practice_rooms__r1" parent="tbl_practice_rooms" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 match_id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="26" />
+        </mxCell>
+        <mxCell id="tbl_practice_rooms__r2" parent="tbl_practice_rooms" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_mode match_mode NOT NULL DEFAULT 'PRACTICE' CHECK ('PRACTICE')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="52" />
+        </mxCell>
+        <mxCell id="tbl_practice_rooms__r3" parent="tbl_practice_rooms" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="room_code varchar(16) UNIQUE NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="78" />
+        </mxCell>
+        <mxCell id="tbl_practice_rooms__r4" parent="tbl_practice_rooms" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="title varchar(150)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="104" />
+        </mxCell>
+        <mxCell id="tbl_match_slots" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_slots" vertex="1">
+          <mxGeometry as="geometry" x="-2300" y="20420" width="590" height="234" />
+        </mxCell>
+        <mxCell id="tbl_games" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="games" vertex="1">
+          <mxGeometry as="geometry" x="-2300" y="20760" width="300" height="130" />
+        </mxCell>
+        <mxCell id="tbl_games__r1" parent="tbl_games" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="26" />
+        </mxCell>
+        <mxCell id="tbl_games__r2" parent="tbl_games" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="code varchar(50) UNIQUE NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="52" />
+        </mxCell>
+        <mxCell id="tbl_games__r3" parent="tbl_games" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="name varchar(150) NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="78" />
+        </mxCell>
+        <mxCell id="tbl_games__r4" parent="tbl_games" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_active boolean NOT NULL DEFAULT true" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="104" />
+        </mxCell>
+        <mxCell id="tbl_game_configs" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="game_configs" vertex="1">
+          <mxGeometry as="geometry" x="-2300" y="20960" width="390" height="234" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r1" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="26" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r2" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK2,FK1 game_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="52" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r3" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK2,FK2 season_id uuid NULL  -- NULL=global/practice" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="78" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r4" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK2 version int NOT NULL DEFAULT 1" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="104" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r5" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1 allows_betting boolean NOT NULL DEFAULT false" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="130" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r6" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="config_json jsonb NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="156" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r7" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_active boolean NOT NULL DEFAULT true" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="182" />
+        </mxCell>
+        <mxCell id="tbl_game_configs__r8" parent="tbl_game_configs" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="390" y="208" />
+        </mxCell>
+        <mxCell id="tbl_question_sets" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="question_sets" vertex="1">
+          <mxGeometry as="geometry" x="-2300" y="21280" width="430" height="286" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r1" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="26" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r2" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK1 game_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="52" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r3" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1 environment match_mode NOT NULL  -- OFFICIAL | PRACTICE" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="78" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r4" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status question_set_status NOT NULL DEFAULT 'DRAFT'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="104" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r5" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="title varchar(200) NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="130" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r6" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="description text" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="156" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r7" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2 created_by uuid" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="182" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r8" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK3 approved_by uuid" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="208" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r9" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="approved_at timestamptz" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="234" />
+        </mxCell>
+        <mxCell id="tbl_question_sets__r10" parent="tbl_question_sets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="430" y="260" />
+        </mxCell>
+        <mxCell id="tbl_matches" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="matches" vertex="1">
+          <mxGeometry as="geometry" x="-1640" y="20220" width="580" height="234" />
+        </mxCell>
+        <mxCell id="tbl_official_match_teams" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="official_match_teams" vertex="1">
+          <mxGeometry as="geometry" x="-1640" y="20510" width="580" height="156" />
+        </mxCell>
+        <mxCell id="tbl_match_stages" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_stages" vertex="1">
+          <mxGeometry as="geometry" x="-1640" y="20760" width="500" height="416" />
+        </mxCell>
+        <mxCell id="tbl_match_events" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_events" vertex="1">
+          <mxGeometry as="geometry" x="-1640" y="21240" width="520" height="338" />
+        </mxCell>
+        <mxCell id="tbl_official_matches" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="official_matches" vertex="1">
+          <mxGeometry as="geometry" x="-960" y="20220" width="520" height="312" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r1" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,FK1 match_id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="26" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r2" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_mode match_mode NOT NULL DEFAULT 'OFFICIAL' CHECK ('OFFICIAL')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="52" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r3" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK2 season_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="78" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r4" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2 round_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="104" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r5" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="match_code varchar(50) UNIQUE NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="130" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r6" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="official_type official_match_type NOT NULL DEFAULT 'REGULAR'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="156" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r7" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="pairing_method pairing_method NOT NULL DEFAULT 'MANUAL'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="182" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r8" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="scheduled_at timestamptz" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="208" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r9" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="venue_room varchar(150)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="234" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r10" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="schedule_published boolean NOT NULL DEFAULT false" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="260" />
+        </mxCell>
+        <mxCell id="tbl_official_matches__r11" parent="tbl_official_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="result_published boolean NOT NULL DEFAULT false" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="286" />
+        </mxCell>
+        <mxCell id="tbl_match_staff" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_staff" vertex="1">
+          <mxGeometry as="geometry" x="-960" y="20600" width="300" height="156" />
+        </mxCell>
+        <mxCell id="tbl_match_staff__r1" parent="tbl_match_staff" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="26" />
+        </mxCell>
+        <mxCell id="tbl_match_staff__r2" parent="tbl_match_staff" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK2,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="52" />
+        </mxCell>
+        <mxCell id="tbl_match_staff__r3" parent="tbl_match_staff" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1,FK2 season_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="78" />
+        </mxCell>
+        <mxCell id="tbl_match_staff__r4" parent="tbl_match_staff" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK2,FK2 season_staff_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="104" />
+        </mxCell>
+        <mxCell id="tbl_match_staff__r5" parent="tbl_match_staff" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="assigned_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="130" />
+        </mxCell>
+        <mxCell id="tbl_match_bets" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="match_bets" vertex="1">
+          <mxGeometry as="geometry" x="-960" y="20820" width="560" height="234" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r1" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1,FK2,FK3,FK4 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="26" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r2" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1,FK3 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="52" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r3" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2,FK3 stage_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="78" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r4" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2 allows_betting boolean NOT NULL DEFAULT true CHECK (allows_betting = true)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="104" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r5" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="bet_amount numeric(10,2) NOT NULL CHECK (1..60)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="130" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r6" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK3 placed_event_seq int NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="156" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r7" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK4 entered_by_staff_id uuid NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="182" />
+        </mxCell>
+        <mxCell id="tbl_match_bets__r8" parent="tbl_match_bets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="placed_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="208" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="stage_score_entries" vertex="1">
+          <mxGeometry as="geometry" x="-960" y="21120" width="620" height="364" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r1" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1,FK2,FK3 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="26" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r2" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 event_seq int NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="52" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r3" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK2 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="78" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r4" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK entry_no smallint NOT NULL DEFAULT 1" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="104" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r5" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 stage_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="130" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r6" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="score_category score_category NOT NULL  -- BASE|BONUS|PENALTY|BET|JUDGE_ADJUSTMENT" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="156" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r7" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="decision_source decision_source NOT NULL  -- GAME_RULE|CODE_JUDGE|AI_SIMULATOR|STAFF_*" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="182" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r8" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="delta_score numeric(10,2) NOT NULL CHECK (delta_score &lt;&gt; 0)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="208" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r9" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="reason text NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="234" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r10" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK3 decided_by_staff_id uuid NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="260" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r11" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="286" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r12" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="[CHECK] STAFF_MANUAL_ADJUST =&gt; JUDGE_ADJUSTMENT, reason NOT EMPTY, staff NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="312" />
+        </mxCell>
+        <mxCell id="tbl_stage_score_entries__r13" parent="tbl_stage_score_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="[CHECK] STAFF_* =&gt; staff NOT NULL; AUTO_* =&gt; staff IS NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="620" y="338" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="live_coverages" vertex="1">
+          <mxGeometry as="geometry" x="-260" y="20880" width="320" height="208" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r1" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="26" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r2" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_id uuid UNIQUE NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="52" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r3" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="title varchar(255) NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="78" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r4" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status live_status NOT NULL DEFAULT 'LIVE'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="104" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r5" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="livestream_embed_url text" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="130" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r6" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="archive_video_url text" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="156" />
+        </mxCell>
+        <mxCell id="tbl_live_coverages__r7" parent="tbl_live_coverages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="320" y="182" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="live_coverage_entries" vertex="1">
+          <mxGeometry as="geometry" x="-260" y="21180" width="300" height="208" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r1" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="26" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r2" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 live_coverage_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="52" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r3" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="occurred_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="78" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r4" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="content_text text NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="104" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r5" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="image_url text" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="130" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r6" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="is_pinned boolean NOT NULL DEFAULT false" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="156" />
+        </mxCell>
+        <mxCell id="tbl_live_coverage_entries__r7" parent="tbl_live_coverage_entries" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2 created_by uuid" vertex="1">
+          <mxGeometry as="geometry" height="26" width="300" y="182" />
+        </mxCell>
+        <mxCell id="edge_match_1" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_matches" target="tbl_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=0;exitY=0.35;exitDx=0;exitDy=0;entryX=1;entryY=0.35;entryDx=0;entryDy=0;" value="FK1 (match_id, match_mode='OFFICIAL')">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_2" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_practice_rooms" target="tbl_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="FK1 (match_id, match_mode='PRACTICE')">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_3" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_matches" target="FkVBnLay4ox0SEv2v0c9-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="FK2 (season_id, round_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_4" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_slots" target="tbl_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERoneToMany;endArrow=ERmandOne;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" value="FK1 (match_id, match_mode, match_type)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_5" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_match_teams" target="tbl_match_slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=0;exitY=0.35;exitDx=0;exitDy=0;entryX=1;entryY=0.6;entryDx=0;entryDy=0;" value="FK1 (match_id, slot_no, slot_kind)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_6" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_match_teams" target="tbl_official_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERoneToMany;endArrow=ERmandOne;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" value="FK2 (match_id, season_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_7" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_match_teams" target="FkVBnLay4ox0SEv2v0c9-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=1;exitY=0.15;entryX=0.25;entryY=1;" value="FK3 (season_id, team_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1020" y="20533" />
+              <mxPoint x="-1020" y="20185" />
+              <mxPoint x="-905" y="20185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_8" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_practice_slot_bots" target="tbl_match_slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" value="FK1 (match_id, slot_no, slot_kind)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_9" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_practice_slot_humans" target="tbl_match_slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=1;exitY=0.4;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" value="FK1 (match_id, slot_no, slot_kind)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_10" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_practice_slot_humans" target="FkVBnLay4ox0SEv2v0c9-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERzeroToOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" value="FK2 (source_team_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-2365" y="20732" />
+              <mxPoint x="-2365" y="20140" />
+              <mxPoint x="-1010" y="20140" />
+              <mxPoint x="-1010" y="20013" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_11" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_practice_slot_members" target="tbl_practice_slot_humans" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERoneToMany;endArrow=ERmandOne;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="FK1 (match_id, slot_no)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_12" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_practice_slot_members" target="FkVBnLay4ox0SEv2v0c9-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="FK2 (user_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-3040" y="20978" />
+              <mxPoint x="-3040" y="19780" />
+              <mxPoint x="185" y="19780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_13" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_staff" target="tbl_official_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="FK1 (match_id, season_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_14" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_staff" target="FkVBnLay4ox0SEv2v0c9-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="FK2 (season_id, season_staff_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-380" y="20646" />
+              <mxPoint x="-380" y="20580" />
+              <mxPoint x="190" y="20580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_15" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_live_coverages" target="tbl_official_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.85;entryDx=0;entryDy=0;" value="FK1 (match_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-180" y="20820" />
+              <mxPoint x="-380" y="20820" />
+              <mxPoint x="-380" y="20485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_16" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_live_coverage_entries" target="tbl_live_coverages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="FK1 (live_coverage_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_17" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_game_configs" target="tbl_games" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0.4;exitY=0;exitDx=0;exitDy=0;entryX=0.4;entryY=1;entryDx=0;entryDy=0;" value="FK1 (game_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_18" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_game_configs" target="FkVBnLay4ox0SEv2v0c9-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERzeroToOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=1;exitY=0.9;entryX=0.5;entryY=1;" value="FK2 (season_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1835" y="21170" />
+              <mxPoint x="-1835" y="21655" />
+              <mxPoint x="655" y="21655" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_19" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_question_sets" target="tbl_games" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="FK1 (game_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-2360" y="21383" />
+              <mxPoint x="-2360" y="20785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_20" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_stages" target="tbl_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=0;exitY=0.12;entryX=0;entryY=0.78;" value="FK1 (match_id, match_mode, match_type='VERSUS')">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1680" y="20767" />
+              <mxPoint x="-1680" y="20362" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_21" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_stages" target="tbl_game_configs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.45;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="FK2 (game_config_id, game_id, allows_betting)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_22" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_stages" target="tbl_question_sets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.8;exitDx=0;exitDy=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;" value="FK3 (question_set_id, game_id, match_mode)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_23" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_stages" target="tbl_games" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.15;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="FK4 (game_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_24" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_events" target="tbl_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.15;exitDx=0;exitDy=0;entryX=0.05;entryY=1;entryDx=0;entryDy=0;" value="FK1 (match_id, match_type='VERSUS')">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1700" y="21227" />
+              <mxPoint x="-1700" y="20450" />
+              <mxPoint x="-1618" y="20450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_25" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_events" target="tbl_match_stages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERzeroToOne;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="FK2 (match_id, stage_no)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_26" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_events" target="tbl_match_slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERzeroToOne;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.35;entryY=1;entryDx=0;entryDy=0;" value="FK3 (match_id, actor_slot_no)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1760" y="21336" />
+              <mxPoint x="-1760" y="20680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_27" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_stage_score_entries" target="tbl_match_events" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" value="FK1 (match_id, event_seq, stage_no)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_28" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_stage_score_entries" target="tbl_match_slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=0.2;exitY=1;entryX=0.85;entryY=1;" value="FK2 (match_id, slot_no)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-836" y="21615" />
+              <mxPoint x="-1798" y="21615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_29" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_stage_score_entries" target="tbl_match_staff" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERzeroToOne;exitX=1;exitY=0.35;exitDx=0;exitDy=0;entryX=1;entryY=0.65;entryDx=0;entryDy=0;" value="FK3 (match_id, decided_by_staff_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-310" y="21247" />
+              <mxPoint x="-310" y="20700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_30" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_bets" target="tbl_match_slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.85;entryY=1;entryDx=0;entryDy=0;" value="FK1 (match_id, slot_no)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1010" y="20820" />
+              <mxPoint x="-1010" y="20678" />
+              <mxPoint x="-1750" y="20678" />
+              <mxPoint x="-1750" y="20628" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_31" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_bets" target="tbl_match_stages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.45;exitDx=0;exitDy=0;entryX=1;entryY=0.45;entryDx=0;entryDy=0;" value="FK2 (match_id, stage_no, allows_betting)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_32" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_bets" target="tbl_match_events" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=0;exitY=0.85;entryX=1;entryY=0.15;" value="FK3 (match_id, placed_event_seq, stage_no, slot_no)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1040" y="21019" />
+              <mxPoint x="-1040" y="21227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_33" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_match_bets" target="tbl_match_staff" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERzeroToOne;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="FK4 (match_id, entered_by_staff_id)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="tbl_matches__r1" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,UK2,UK3 id uuid PRIMARY KEY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="26" />
+        </mxCell>
+        <mxCell id="tbl_matches__r2" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK3 match_mode match_mode NOT NULL  -- OFFICIAL | PRACTICE" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="52" />
+        </mxCell>
+        <mxCell id="tbl_matches__r3" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK2,UK3 match_type match_type NOT NULL DEFAULT 'VERSUS'  -- VERSUS | PRELIMINARY" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="78" />
+        </mxCell>
+        <mxCell id="tbl_matches__r4" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status match_status NOT NULL DEFAULT 'DRAFT'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="104" />
+        </mxCell>
+        <mxCell id="tbl_matches__r5" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 created_by uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="130" />
+        </mxCell>
+        <mxCell id="tbl_matches__r6" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="created_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="156" />
+        </mxCell>
+        <mxCell id="tbl_matches__r7" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="updated_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="182" />
+        </mxCell>
+        <mxCell id="tbl_matches__r8" parent="tbl_matches" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="[CHECK] match_mode='PRACTICE' =&gt; match_type='VERSUS'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="208" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r1" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="26" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r2" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 slot_no smallint NOT NULL CHECK (slot_no &gt;= 1)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="52" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r3" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_mode match_mode NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="78" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r4" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_type match_type NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="104" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r5" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1 slot_kind slot_kind NOT NULL  -- OFFICIAL_TEAM | PRACTICE_HUMAN | PRACTICE_BOT" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="130" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r6" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="display_name varchar(150) NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="156" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r7" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="initial_score numeric(10,2) NOT NULL DEFAULT 20" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="182" />
+        </mxCell>
+        <mxCell id="tbl_match_slots__r8" parent="tbl_match_slots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="[CHECK] VERSUS =&gt; slot_no 1..3; OFFICIAL=&gt;OFFICIAL_TEAM; PRACTICE=&gt;HUMAN|BOT" vertex="1">
+          <mxGeometry as="geometry" height="26" width="590" y="208" />
+        </mxCell>
+        <mxCell id="tbl_official_match_teams__r1" parent="tbl_official_match_teams" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK2,FK1,FK2 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="26" />
+        </mxCell>
+        <mxCell id="tbl_official_match_teams__r2" parent="tbl_official_match_teams" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK2,FK1 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="52" />
+        </mxCell>
+        <mxCell id="tbl_official_match_teams__r3" parent="tbl_official_match_teams" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 slot_kind slot_kind NOT NULL DEFAULT 'OFFICIAL_TEAM' CHECK ('OFFICIAL_TEAM')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="78" />
+        </mxCell>
+        <mxCell id="tbl_official_match_teams__r4" parent="tbl_official_match_teams" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2,FK3 season_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="104" />
+        </mxCell>
+        <mxCell id="tbl_official_match_teams__r5" parent="tbl_official_match_teams" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK2,FK3 team_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="580" y="130" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r1" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="26" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r2" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1 stage_no smallint NOT NULL CHECK (stage_no &gt;= 1)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="52" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r3" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1,FK3 match_mode match_mode NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="78" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r4" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_type match_type NOT NULL DEFAULT 'VERSUS' CHECK ('VERSUS')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="104" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r5" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2,FK3,FK4 game_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="130" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r6" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK2 allows_betting boolean NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="156" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r7" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK2 game_config_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="182" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r8" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK3 question_set_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="208" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r9" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="random_seed bigint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="234" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r10" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="status stage_status NOT NULL DEFAULT 'PENDING'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="260" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r11" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="started_at timestamptz" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="286" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r12" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="paused_at timestamptz" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="312" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r13" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="ended_at timestamptz" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="338" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r14" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="elapsed_ms int NOT NULL DEFAULT 0" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="364" />
+        </mxCell>
+        <mxCell id="tbl_match_stages__r15" parent="tbl_match_stages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="[UQ_PARTIAL] (match_id) WHERE status IN ('READY','RUNNING','PAUSED')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="500" y="390" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r1" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,UK2,FK1,FK2,FK3 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="26" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r2" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,UK2 seq int NOT NULL CHECK (seq &gt;= 1)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="52" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r3" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_type match_type NOT NULL DEFAULT 'VERSUS' CHECK ('VERSUS')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="78" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r4" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,UK2,FK2 stage_no smallint NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="104" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r5" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="event_type varchar(60) NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="130" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r6" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK2,FK3 actor_slot_no smallint NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="156" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r7" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK4 actor_user_id uuid NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="182" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r8" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK3 idempotency_key varchar(100) NULL  -- UK3(match_id, idempotency_key)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="208" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r9" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="server_monotonic_ms bigint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="234" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r10" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="stage_elapsed_ms int NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="260" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r11" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="occurred_at timestamptz NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="286" />
+        </mxCell>
+        <mxCell id="tbl_match_events__r12" parent="tbl_match_events" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="payload jsonb NOT NULL DEFAULT '{}'" vertex="1">
+          <mxGeometry as="geometry" height="26" width="520" y="312" />
+        </mxCell>
+        <mxCell id="tbl_official_match_lineups" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="official_match_lineups" vertex="1">
+          <mxGeometry as="geometry" x="-1640" y="19860" width="410" height="156" />
+        </mxCell>
+        <mxCell id="tbl_official_match_lineups__r1" parent="tbl_official_match_lineups" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,UK1,FK1 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="410" y="26" />
+        </mxCell>
+        <mxCell id="tbl_official_match_lineups__r2" parent="tbl_official_match_lineups" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="410" y="52" />
+        </mxCell>
+        <mxCell id="tbl_official_match_lineups__r3" parent="tbl_official_match_lineups" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK member_no smallint NOT NULL CHECK (1..5)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="410" y="78" />
+        </mxCell>
+        <mxCell id="tbl_official_match_lineups__r4" parent="tbl_official_match_lineups" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1,FK2 team_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="410" y="104" />
+        </mxCell>
+        <mxCell id="tbl_official_match_lineups__r5" parent="tbl_official_match_lineups" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="UK1,FK2 user_id uuid NOT NULL  -- UK1(match_id, user_id)" vertex="1">
+          <mxGeometry as="geometry" height="26" width="410" y="130" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results" parent="FkVBnLay4ox0SEv2v0c9-6" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" value="preliminary_results" vertex="1">
+          <mxGeometry as="geometry" x="-2320" y="19860" width="560" height="208" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r1" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK1,FK2 match_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="26" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r2" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK2 slot_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="52" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r3" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="PK,FK2 member_no smallint NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="78" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r4" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK1 match_type match_type NOT NULL DEFAULT 'PRELIMINARY' CHECK ('PRELIMINARY')" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="104" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r5" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="FK3 question_set_id uuid NOT NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="130" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r6" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="score numeric(10,2) NOT NULL DEFAULT 0" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="156" />
+        </mxCell>
+        <mxCell id="tbl_preliminary_results__r7" parent="tbl_preliminary_results" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="submitted_at timestamptz NULL" vertex="1">
+          <mxGeometry as="geometry" height="26" width="560" y="182" />
+        </mxCell>
+        <mxCell id="edge_match_34" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_match_lineups" target="tbl_official_match_teams" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERoneToMany;endArrow=ERmandOne;exitDx=0;exitDy=0;entryDx=0;entryDy=0;exitX=1;exitY=0.8;entryX=1;entryY=0.45;" value="FK1 (match_id, slot_no, team_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1000" y="19985" />
+              <mxPoint x="-1000" y="20580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_35" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_official_match_lineups" target="FkVBnLay4ox0SEv2v0c9-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0.6;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="FK2 (team_id, user_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1350" y="19815" />
+              <mxPoint x="-340" y="19815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_36" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_preliminary_results" target="tbl_matches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" value="FK1 (match_id, match_type='PRELIMINARY')">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-1830" y="20165" />
+              <mxPoint x="-1490" y="20165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_match_37" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_preliminary_results" target="tbl_official_match_lineups" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToOne;endArrow=ERmandOne;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="FK2 (match_id, slot_no, member_no)">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge_match_38" edge="1" parent="FkVBnLay4ox0SEv2v0c9-6" source="tbl_preliminary_results" target="tbl_question_sets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;endFill=0;startFill=0;startArrow=ERzeroToMany;endArrow=ERmandOne;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" value="FK3 (question_set_id)">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="-2345" y="20016" />
+              <mxPoint x="-2345" y="21494" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
